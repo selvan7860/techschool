@@ -6,7 +6,9 @@ const departmentRoute = require('./departmentRoute');
 const mentorDetailsRoute = require('./mentorDetailsRoute')
 const designationRoute = require('./designationRoute')
 const courseRoute = require('./courseRoute')
+const techStackRoute = require('./techstackRoute')
 
+router.use('/techstack', techStackRoute);
 router.use('/payment', paymentRoute);
 router.use('/course', courseRoute)
 router.use('/department', departmentRoute);
