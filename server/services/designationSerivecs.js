@@ -1,5 +1,7 @@
 const Designation = require('../models/designation')
 
+
+// ADD DESIGNATION
 async function addDesignationSerivce(designationData){
     try{
         const newDesignation = new Designation(designationData);
@@ -9,6 +11,7 @@ async function addDesignationSerivce(designationData){
     }
 }
 
+// GET ALL DEDIGNATION
 async function getDesignationService(){
     try{
         const getDesignation = await Designation.find();
@@ -19,6 +22,7 @@ async function getDesignationService(){
     }
 }
 
+// DELETE PARTICULAR DESIGNATION
 async function deleteDesignationService(designationId){
     try{
         const deleteDesigantion = await Designation.findByIdAndDelete(designationId)
@@ -28,6 +32,7 @@ async function deleteDesignationService(designationId){
     }
 }
 
+// UPDATE PARTICULAR DESIGNATION
 async function updateDesignationService(designationId, designationData){
     try {
         const updateDesignation = await Designation.findByIdAndUpdate(
