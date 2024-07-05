@@ -1,5 +1,6 @@
 const Course = require('../models/course');
 
+//ADD COURSE 
 async function addCourseService(courseData) {
     try {
         const newCourse = new Course(courseData);
@@ -9,7 +10,7 @@ async function addCourseService(courseData) {
     }
 }
 
-
+//GET ALL COURSE
 async function getAllCourseService(){
     try{
         const getAllCouser = await Course.find();
@@ -19,6 +20,7 @@ async function getAllCourseService(){
     }
 }
 
+// UPDATE COURSE
 async function updateCourseService(courseId, courseData){
     try{
         const updateCourse = await Course.findByIdAndUpdate(
@@ -36,6 +38,7 @@ async function updateCourseService(courseId, courseData){
     }
 }
 
+// DELETE COURSE
 async function deleteCourseService(courseId){
     try{
         const deleteCourse = await Course.findByIdAndDelete(courseId);
