@@ -1,6 +1,5 @@
 const designationSerivce = require('../services/designationSerivecs');
 
-
 // ADD DESIGNATION 
 async function addDesignationController(req, res, next){
     const {name} = req.body;
@@ -13,7 +12,6 @@ async function addDesignationController(req, res, next){
     }
 }
 
-
 // GET DESIGNATION
 async function getDesignationController(req, res, next){
     try {
@@ -25,7 +23,6 @@ async function getDesignationController(req, res, next){
     
 }
 
-
 // DELETE DESIGNATION
 async function deleteDesignationController(req, res, next) {
     try{
@@ -36,7 +33,6 @@ async function deleteDesignationController(req, res, next) {
         next(error);
     }
 }
-
 
 // UPDATE DESIGNATION
 async function updateDesignationController(req, res, next){
