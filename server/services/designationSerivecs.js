@@ -1,6 +1,5 @@
 const Designation = require('../models/designation')
 
-
 // ADD DESIGNATION
 async function addDesignationSerivce(designationData){
     try{
