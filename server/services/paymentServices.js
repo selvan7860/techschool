@@ -1,5 +1,7 @@
 const Payment = require('../models/payment')
 
+
+// Add Payment Service
 async function addPaymentService(paymentData) {
     try {
         const newPayment = new Payment(paymentData);
@@ -9,6 +11,7 @@ async function addPaymentService(paymentData) {
     }
 }
 
+// Get Payment Service
 async function getAllPayment() {
     try {
         return await Payment.find();
@@ -17,6 +20,7 @@ async function getAllPayment() {
     }
 }
 
+// Update Payment Service
 async function updatePaymentService(paymentId, paymentData) {
     try {
         const updatePayment = await Payment.findByIdAndUpdate(
@@ -33,6 +37,7 @@ async function updatePaymentService(paymentId, paymentData) {
     }
 }
 
+// Delete Payment Service
 async function deletePaymentService(paymentId) {
     console.log(paymentId)
     try {

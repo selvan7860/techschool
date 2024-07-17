@@ -1,5 +1,6 @@
 const Mentor = require('../models/mentor');
 
+// Add Mentor Details
 async function addMentorDetailSerivce(mentorData){
     try{
         if(mentorData.bandwidth && !/^\d{2}:\d{2}:\d{2}$/.test(mentorData.bandwidth)){
