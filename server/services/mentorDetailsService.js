@@ -12,6 +12,7 @@ async function addMentorDetailSerivce(mentorData){
     }
 }
 
+// Update Mentor Data
 async function updateMentorDetailService(userId, mentorData){
     try{
         if(mentorData.bandwidth && !/^\d{2}:\d{2}:\d{2}$/.test(mentorData.bandwidth)){
